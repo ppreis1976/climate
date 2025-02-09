@@ -1,0 +1,32 @@
+### GET request with a header
+GET http://localhost:8080/climate
+Accept: application/json
+Zip_Code: 03276010
+
+### GET request with a header fail zipcode != 8
+GET http://localhost:8080/climate
+Accept: application/json
+Zip_Code: 0327310
+
+### GET request with zip code not found
+GET http://localhost:8080/climate
+Accept: application/json
+Zip_Code: 99999999
+
+### POST request with a header
+POST http://localhost:8080/climate
+Accept: application/json
+
+### GET ViaCEP
+GET http://viacep.com.br/ws/03273100/json/
+
+### GET ViaCEP not found
+GET http://viacep.com.br/ws/78890000/json/
+
+### GET Wheater API
+GET http://api.weatherapi.com/v1/current.json?key=6ce46037f7034601a4e231757240909&q=Sao%20Paulo&aqi=no
+
+### GET request with a header fail not found
+GET http://localhost:8080/climate
+Accept: application/json
+Zip_Code: 0x276010
