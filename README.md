@@ -68,6 +68,8 @@ Utilize docker/docker-compose para que possamos realizar os testes de sua aplica
    Responsável por se conectar com as API's externas
 
     ```
+    repository: https://github.dev/ppreis1976/climateZipCode
+    
     cd climateZipCode
     go run cmd/api/main.go
     ```
