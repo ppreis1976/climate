@@ -67,6 +67,8 @@ Utilize docker/docker-compose para que possamos realizar os testes de sua aplica
    ### Iniciar o serviço Climate Zip Code
    Responsável por se conectar com as API's externas
 
+   Clonar e executar o projeto climateZipCode denominado de Serviço B.
+
     ```
     repository: https://github.dev/ppreis1976/climateZipCode
     
@@ -74,8 +76,9 @@ Utilize docker/docker-compose para que possamos realizar os testes de sua aplica
     go run cmd/api/main.go
     ```
 
-   ### Iniciar o serviço Climate
-    Responsável por se conectar com o Climate Zip Code
+   ### Iniciar o serviço Climate denominado de serviço A
+   
+    Este projeto é responsável por se conectar com o Climate Zip Code.
     ```
     cd climate
     go run cmd/graphql/main.go
